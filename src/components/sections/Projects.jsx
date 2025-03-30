@@ -1,5 +1,5 @@
 import { ScrollIndicator } from '../ScrollIndicator';
-import Github from '../../assets/vectors/Github.svg'
+import assets from '../../utils/assets'
 
 /**
  * Projects Component
@@ -48,7 +48,7 @@ export const Projects = () => {
                             </a>
                             {/* GitHub icon button */}
                             <a href="https://github.com/Sahil2802/sorting-visualizer" target="_blank" rel="noopener noreferrer" className="py-1.5 px-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition-colors">
-                                <img className='w-6 h-6' src={Github} alt="GitHub repository link" />
+                                <img className='w-6 h-6' src={assets.Github} alt="GitHub repository link" />
                             </a>
                         </div>
 
@@ -85,7 +85,7 @@ export const Projects = () => {
                             </a>
                             {/* GitHub icon button */}
                             <a href="https://github.com/Sahil2802/expense-tracker" target="_blank" rel="noopener noreferrer" className="py-1.5 px-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition-colors">
-                                <img className='w-6 h-6' src={Github} alt="GitHub repository link" />
+                                <img className='w-6 h-6' src={assets.Github} alt="GitHub repository link" />
                             </a>
                         </div>
 
@@ -122,7 +122,7 @@ export const Projects = () => {
                             </a>
                             {/* GitHub icon button */}
                             <a href="https://github.com/Sahil2802/sudoku-solver" target="_blank" rel="noopener noreferrer" className="py-1.5 px-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition-colors">
-                                <img className='w-6 h-6' src={Github} alt="GitHub repository link" />
+                                <img className='w-6 h-6' src={assets.Github} alt="GitHub repository link" />
                             </a>
                         </div>
 
@@ -159,7 +159,7 @@ export const Projects = () => {
                             </a>
                             {/* GitHub icon button */}
                             <a href="https://github.com/Sahil2802/BootCamp/tree/main/MovieRecommender" target="_blank" rel="noopener noreferrer" className="py-1.5 px-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition-colors">
-                                <img className='w-6 h-6' src={Github} alt="GitHub repository link" />
+                                <img className='w-6 h-6' src={assets.Github} alt="GitHub repository link" />
                             </a>
                         </div>
 

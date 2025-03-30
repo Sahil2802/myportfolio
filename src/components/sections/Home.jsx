@@ -29,7 +29,7 @@ export const Home = () => {
                 {/* image placeholder */}
                 <img
                     className="w-full aspect-square absolute top-10"
-                    src="/src/assets/images/Profile.jpg"
+                    src={assets.Profile}
                     alt="Profile placeholder"
                 />
             </div>
