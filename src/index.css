@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #181a1b;
+  color: #f3f4f6;
+}
+
+@font-face {
+  font-family: Brasika-display;
+  src: url("../src/assets/fonts/BrasikaDisplay.ttf");
+}
+
+@theme {
+  --font-brasika-display: Brasika-display, "sans-serif";
+}
+
+/* custom css */
+.custom-border-orange {
+  border-color: #ea580c;
+}
+
+.custom-text-orange {
+  color: #ea580c;
+}
+
+/* Custom CSS for increasing bullet size */
+.custom-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.custom-list li::marker {
+  font-size: 1.5em; /* Adjust the size as needed */
+  color: #e4e4e4; /* Optional: Change the color of the bullet */
+}
+
+/* Custom Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-right {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.animate-float-down {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
