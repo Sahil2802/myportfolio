@@ -1,5 +1,5 @@
 import { ScrollIndicator } from '../ScrollIndicator';
-import assets from '../utils/assets'
+import assets from '../../utils/assets'
 
 export const Home = () => {
     return (
