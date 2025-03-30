@@ -1,6 +1,4 @@
-import Github from '../assets/vectors/Github.svg'
-import Linkedin from '../assets/vectors/Linkedin.svg'
-import mail from '../assets/vectors/mail.svg'
+import assets from '../utils/assets'
 import { useScroll } from '../context/useScroll'
 
 export const SocialLinks = () => {
@@ -18,14 +16,14 @@ export const SocialLinks = () => {
 
             {/* Social Links */}
             <div className="fixed right-22 top-1/2 -translate-y-1/2 flex flex-col gap-4 [@media(max-width:1272px)]:hidden">
-                <a href="https://github.com/Sahil2802" target="_blank" rel="noopener noreferrer" className="group transition-transform hover:-translate-y-1">
-                    <img src={Github} alt="GitHub" className="w-6 h-6 transition-colors group-hover:brightness-0 group-hover:invert" />
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="group transition-transform hover:-translate-y-1">
+                    <img src={assets.Github} alt="GitHub" className="w-6 h-6 transition-colors group-hover:brightness-0 group-hover:invert" />
                 </a>
-                <a href="https://www.linkedin.com/in/sahil2802/" target="_blank" rel="noopener noreferrer" className="group transition-transform hover:-translate-y-1">
-                    <img src={Linkedin} alt="LinkedIn" className="w-6 h-6 transition-colors group-hover:brightness-0 group-hover:invert" />
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="group transition-transform hover:-translate-y-1">
+                    <img src={assets.Linkedin} alt="LinkedIn" className="w-6 h-6 transition-colors group-hover:brightness-0 group-hover:invert" />
                 </a>
-                <a href="mailto:forsahil2802@gmail.com" className="group transition-transform hover:-translate-y-1">
-                    <img src={mail} alt="Email" className="w-6 h-6 transition-colors group-hover:brightness-0 group-hover:invert" />
+                <a href="mailto:your.email@example.com" className="group transition-transform hover:-translate-y-1">
+                    <img src={assets.Mail} alt="Email" className="w-6 h-6 transition-colors group-hover:brightness-0 group-hover:invert" />
                 </a>
             </div>
         </>

@@ -1,3 +1,6 @@
+import assets from '../../utils/assets'
+
+
 export const Contact = () => {
     return (
         <section id="contact" className="min-h-screen flex items-center justify-between m-8">
@@ -6,7 +9,7 @@ export const Contact = () => {
                     <div className="flex flex-col">
                         <h2 className="text-5xl md:text-8xl font-bold text-[#ea580c]">Contact</h2>
                         <img
-                            src="/src/assets/vectors/doodle_underline.svg"
+                            src={assets.DoodleUnderline}
                             alt="doodle underline"
                             className="w-55 md:w-100 h-auto "
                         />

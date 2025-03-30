@@ -1,4 +1,5 @@
 import { ScrollIndicator } from '../ScrollIndicator';
+import assets from '../utils/assets'
 
 export const Home = () => {
     return (
@@ -12,7 +13,7 @@ export const Home = () => {
                         <span className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-2 custom-text-orange">Front</span>end Developer
                         {/* arrow */}
                         <img
-                            src="/src/assets/vectors/arrow-11.svg"
+                            src={assets.Arrow11}
                             alt="arrow"
                             className="absolute -right-12 md:-right-22 top-1/2 -translate-y-1/2 w-16 h-16 md:w-28 md:h-28 animate-float-right hidden lg:block"
                         />
