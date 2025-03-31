@@ -11,7 +11,17 @@ export const Contact = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", env.WEB3FORMS_KEY);
+        const apiKey = env.WEB3FORMS_KEY;
+        console.log('API Key:', apiKey); // Debug log
+
+        if (!apiKey) {
+            console.error('API Key is missing');
+            toast.error('Configuration error. Please try again later.');
+            setResult("");
+            return;
+        }
+
+        formData.append("access_key", apiKey);
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -20,18 +30,19 @@ export const Contact = () => {
             });
 
             const data = await response.json();
+            console.log('Response:', data); // Debug log
 
             if (data.success) {
                 setResult("");
                 toast.success("Message sent");
                 event.target.reset();
             } else {
-                console.log("Error", data);
-                toast.error(data.message);
+                console.error("Error", data);
+                toast.error(data.message || "Failed to send message");
                 setResult("");
             }
         } catch (error) {
-            console.log("Error", error);
+            console.error("Error", error);
             toast.error("Something went wrong!");
             setResult("");
         }
