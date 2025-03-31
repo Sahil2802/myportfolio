@@ -6,17 +6,21 @@ import { Projects } from './components/sections/Projects'
 import { Contact } from './components/sections/Contact'
 import { SocialLinks } from './components/SocialLinks'
 import { ScrollProvider } from './context/ScrollContext'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   return (
-    <ScrollProvider>
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <SocialLinks />
-    </ScrollProvider>
+    <>
+      <Toaster position="top-center" />
+      <ScrollProvider>
+        <Navbar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+        <SocialLinks />
+      </ScrollProvider>
+    </>
   )
 }
 
