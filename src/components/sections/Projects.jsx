@@ -114,12 +114,12 @@ export const Projects = () => {
                         </div>
                         <div className="flex gap-2.5">
                             {/* Play button with icon */}
-                            <a href="#" className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#ea580c] hover:bg-amber-700 text-white transition-colors text-sm">
+                            {/* <a href="" className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#ea580c] hover:bg-amber-700 text-white transition-colors text-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
                                 </svg>
 
-                            </a>
+                            </a> */}
                             {/* GitHub icon button */}
                             <a href="https://github.com/Sahil2802/sudoku-solver" target="_blank" rel="noopener noreferrer" className="py-1.5 px-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition-colors">
                                 <img className='w-6 h-6' src={assets.Github} alt="GitHub repository link" />
@@ -151,12 +151,12 @@ export const Projects = () => {
                         </div>
                         <div className="flex gap-2.5">
                             {/* Play button with icon */}
-                            <a href="" className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#ea580c] hover:bg-amber-700 text-white transition-colors text-sm">
+                            {/* <a href="" className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#ea580c] hover:bg-amber-700 text-white transition-colors text-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
                                 </svg>
 
-                            </a>
+                            </a> */}
                             {/* GitHub icon button */}
                             <a href="https://github.com/Sahil2802/BootCamp/tree/main/MovieRecommender" target="_blank" rel="noopener noreferrer" className="py-1.5 px-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-white transition-colors">
                                 <img className='w-6 h-6' src={assets.Github} alt="GitHub repository link" />
