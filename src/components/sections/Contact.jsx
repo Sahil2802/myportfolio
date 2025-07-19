@@ -12,7 +12,6 @@ export const Contact = () => {
         const formData = new FormData(event.target);
 
         const apiKey = env.WEB3FORMS_KEY;
-        console.log('API Key:', apiKey); // Debug log
 
         if (!apiKey) {
             console.error('API Key is missing');
