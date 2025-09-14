@@ -1,10 +1,21 @@
 import assets from '../utils/assets'
-import { scrollToSection } from '../utils/scroll'
 
 export const ScrollIndicator = ({ text, targetSection }) => {
     const handleScroll = (e, sectionId) => {
         e.preventDefault();
-        scrollToSection(sectionId);
+        
+        // Map section IDs to indices
+        const sectionMap = {
+            'home': 0,
+            'about': 1,
+            'projects': 2,
+            'contact': 3
+        };
+        
+        const targetIndex = sectionMap[sectionId];
+        if (targetIndex !== undefined && window.scrollToSectionByIndex) {
+            window.scrollToSectionByIndex(targetIndex);
+        }
     };
 
     return (

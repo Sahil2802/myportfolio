@@ -1,6 +1,5 @@
 import { ScrollIndicator } from '../ScrollIndicator';
-
-export const About = () => {
+export const About = ({ sectionRef }) => {
     const frontendSkills = [
         "HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS", "Git", "GitHub"
     ];
@@ -10,9 +9,8 @@ export const About = () => {
     const libraries = [
         "React", "Node.js", "Express", "MongoDB"
     ];
-
     return (
-        <section id="about" className="min-h-screen py-30 relative m-4">
+        <section ref={sectionRef} id="about" className="min-h-screen py-30 relative m-4">
             <div className="max-w-5xl mx-auto">
                 <div className="rounded-xl p-8 border border-white/10 hover:border-amber-500/30 hover:shadow-[0_2px_8px_rgba(242,155,68,0.2)] hover:-translate-y-1 transition-all">
                     <h3 className="text-3xl font-semibold">Skills</h3>
@@ -63,27 +61,35 @@ export const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                    <div className="rounded-xl p-8 border border-white/10 hover:border-amber-500/30 hover:shadow-[0_2px_8px_rgba(242,155,68,0.2)]  hover:-translate-y-1 transition mt-4">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
+                    <div className="rounded-xl p-8 border border-white/10 hover:border-amber-500/30 hover:shadow-[0_2px_8px_rgba(242,155,68,0.2)] hover:-translate-y-1 transition mt-4 md:col-span-2">
                         <h3 className="text-3xl font-semibold">Education</h3>
                         <div className="pt-4">
-                            <ul className="custom-list">
+                            <ul className="">
                                 <li>
-                                    <span className=" mr-10 font-bold">2021-2025</span>
-                                    <span className="text-lg font-semibold">B.Tech in CSE<br /></span>
-                                    <span className="ml-[156px] italic">Sharda University</span>
+                                    <div className="flex flex-row items-center">
+                                        <span className="font-bold text-base md:text-lg mr-6 md:mr-10 min-w-[80px] md:min-w-[110px]">2021-2025</span>
+                                        <div className="flex flex-col">
+                                            <span className="text-lg font-semibold">B.Tech in CSE</span>
+                                            <span className="italic text-base md:ml-0">Sharda University</span>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="rounded-xl p-8 border border-white/10 hover:border-amber-500/30 hover:shadow-[0_2px_8px_rgba(242,155,68,0.2)]  hover:-translate-y-1 transition md:mt-4">
+                    <div className="rounded-xl p-10 border border-white/10 hover:border-amber-500/30 hover:shadow-[0_2px_8px_rgba(242,155,68,0.2)] hover:-translate-y-1 transition md:mt-4 md:col-span-3">
                         <h3 className="text-3xl font-semibold">Experience</h3>
                         <div className="pt-4">
-                            <ul className="custom-list mr-[-10px]">
+                            <ul className="mr-[-10px]">
                                 <li>
-                                    <span className="mr-10 font-bold">May 2023</span>
-                                    <span className="text-lg font-semibold">Reloy Shield Pvt. Ltd.<br /></span>
-                                    <span className="ml-[151px] italic">Web Developer Intern</span>
+                                    <div className="flex flex-row items-center">
+                                        <span className="font-bold text-base md:text-lg mr-6 md:mr-10 min-w-[120px] md:min-w-[150px]">June 2025 - Present</span>
+                                        <div className="flex flex-col">
+                                            <span className="text-lg font-semibold">Excellence Technologies</span>
+                                            <span className="italic text-base md:ml-0">Jr. SDE Intern</span>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

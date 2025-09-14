@@ -1,9 +1,9 @@
 import { ScrollIndicator } from '../ScrollIndicator';
 import assets from '../../utils/assets'
 
-export const Home = () => {
+export const Home = ({ sectionRef }) => {
     return (
-        <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-45 relative px-4 md:ml-22 md:mr-30 lg:px-12">
+        <section ref={sectionRef} id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-45 relative px-4 md:ml-22 md:mr-30 lg:px-12">
             <div className="z-10 w-full md:w-auto ">
                 <div className="flex flex-col items-center md:block">
                     <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold mt-15 md:mt-0">

@@ -1,9 +1,9 @@
-import assets from '../../utils/assets'
+import assets from '../../utils/assets';
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { env } from '../../config/env';
 
-export const Contact = () => {
+export const Contact = ({ sectionRef }) => {
     const [result, setResult] = useState("");
 
     const handleSubmit = async (event) => {
@@ -48,7 +48,7 @@ export const Contact = () => {
     };
 
     return (
-        <section id="contact" className="min-h-screen flex items-center justify-between m-8">
+        <section ref={sectionRef} id="contact" className="min-h-screen flex items-center justify-between m-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-5 lg:gap-30 max-w-7xl mx-auto">
                 <div className="flex flex-col ">
                     <div className="flex flex-col">

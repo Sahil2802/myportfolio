@@ -6,10 +6,10 @@ import assets from '../../utils/assets'
  * Displays a grid of project cards showcasing featured projects
  * Each card contains project details, tech stack, and action buttons
  */
-export const Projects = () => {
+export const Projects = ({ sectionRef }) => {
     return (
         // Main projects section with full viewport height and relative positioning for scroll indicator
-        <section id="projects" className="min-h-screen py-30 relative m-4">
+        <section ref={sectionRef} id="projects" className="min-h-screen py-30 relative m-4">
             {/* Container with max width and center alignment for content */}
             <div className="max-w-5xl mx-auto">
                 {/* Section title */}
