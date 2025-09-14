@@ -53,5 +53,5 @@ export default function useScrollSnap(sectionRefs, setCurrentSection) {
     };
     window.addEventListener('wheel', handleWheel, { passive: false });
     return () => window.removeEventListener('wheel', handleWheel);
-  }, [scrollToSection]);
+  }, [scrollToSection, sectionRefs.length]);
 }
