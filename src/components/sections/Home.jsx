@@ -10,7 +10,7 @@ export const Home = ({ sectionRef }) => {
                         Hi, I am Sahil
                     </h1>
                     <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-4 relative">
-                        <span className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-2 custom-text-orange">Front</span>end Developer
+                        <span className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-2 custom-text-orange">Software</span> Engineer
                         {/* arrow */}
                         <img
                             src={assets.Arrow11}
