@@ -84,7 +84,7 @@ export const About = ({ sectionRef }) => {
                             <ul className="mr-[-10px]">
                                 <li>
                                     <div className="flex flex-row items-center">
-                                        <span className="font-bold text-base md:text-lg mr-6 md:mr-10 min-w-[120px] md:min-w-[150px]">June 2025 - Present</span>
+                                        <span className="font-bold text-base md:text-lg mr-6 md:mr-10 min-w-[120px] md:min-w-[150px]">Jul 2025 - Sep 2025</span>
                                         <div className="flex flex-col">
                                             <span className="text-lg font-semibold">Excellence Technologies</span>
                                             <span className="italic text-base md:ml-0">Jr. SDE Intern</span>
